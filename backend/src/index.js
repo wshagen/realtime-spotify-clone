@@ -1,3 +1,5 @@
+delete process.env.DEBUG_URL;
+
 import express from "express";
 import dotenv from "dotenv";
 import { clerkMiddleware } from "@clerk/express";
