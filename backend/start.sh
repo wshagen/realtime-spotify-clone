@@ -3,4 +3,4 @@
 unset DEBUG_URL
 
 # Start backend server
-node server.js
+node backend/server.js
