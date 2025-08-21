@@ -28,11 +28,23 @@ const httpServer = createServer(app);
 initializeSocket(httpServer);
 
 app.use(
-	cors({
-		origin: process.env.CLIENT_URL || "http://localhost:3000",
-		credentials: true,
-	})
+  cors({
+    origin: (origin, callback) => {
+      // only allow your frontend domain
+      const allowedOrigins = [
+        "http://localhost:3000",
+        "https://realtime-spotify-clone-pyew.onrender.com"
+      ];
+      if (!origin || allowedOrigins.includes(origin)) {
+        callback(null, true);
+      } else {
+        callback(new Error("Not allowed by CORS"));
+      }
+    },
+    credentials: true,
+  })
 );
+
 
 app.use(express.json()); // to parse req.body
 app.use(clerkMiddleware()); // this will add auth to req obj => req.auth
