@@ -137,7 +137,7 @@ const AddAlbumDialog = () => {
 						/>
 					</div>
 				</div>
-				<DialogFooter>
+				<DialogFooter className="text-white">
 					<Button variant='outline' onClick={() => setAlbumDialogOpen(false)} disabled={isLoading}>
 						Cancel
 					</Button>

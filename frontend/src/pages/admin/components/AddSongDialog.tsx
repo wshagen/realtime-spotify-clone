@@ -230,7 +230,7 @@ const AddSongDialog = () => {
           </div>
         </div>
 
-        <DialogFooter>
+        <DialogFooter className="text-white">
           <Button
             variant="outline"
             onClick={() => setSongDialogOpen(false)}
