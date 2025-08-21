@@ -103,14 +103,15 @@ export const PlayBackControls = () => {
 							<SkipBack className='h-4 w-4' />
 						</Button>
 
-						<Button
-							size='icon'
-							className='bg-primary hover:bg-primary/80 text-black rounded-full h-8 w-8'
-							onClick={togglePlay}
-							disabled={!currentSong}
+					<Button
+						size="icon"
+						className="rounded-full h-8 w-8 bg-[#22c55e] text-white hover:bg-[#16a34a]"
+						onClick={togglePlay}
+						disabled={!currentSong}
 						>
-							{isPlaying ? <Pause className='h-5 w-5' /> : <Play className='h-5 w-5' />}
+						{isPlaying ? <Pause className="h-5 w-5" /> : <Play className="h-5 w-5" />}
 						</Button>
+\
 						<Button
 							size='icon'
 							variant='ghost'
