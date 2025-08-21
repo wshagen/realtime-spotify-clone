@@ -111,7 +111,7 @@ export const PlayBackControls = () => {
 						>
 						{isPlaying ? <Pause className="h-5 w-5" /> : <Play className="h-5 w-5" />}
 						</Button>
-\
+						
 						<Button
 							size='icon'
 							variant='ghost'
