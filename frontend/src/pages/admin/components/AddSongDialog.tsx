@@ -100,7 +100,7 @@ const AddSongDialog = () => {
           </DialogDescription>
         </DialogHeader>
 
-        <div className="space-y-4 py-4">
+        <div className="space-y-4 py-4 text-white">
           <input
             type="file"
             ref={audioInputRef}

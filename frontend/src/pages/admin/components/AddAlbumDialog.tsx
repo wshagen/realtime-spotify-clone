@@ -82,7 +82,7 @@ const AddAlbumDialog = () => {
 					<DialogTitle>Add New Album</DialogTitle>
 					<DialogDescription>Add a new album to your collection</DialogDescription>
 				</DialogHeader>
-				<div className='space-y-4 py-4'>
+				<div className='space-y-4 py-4 text-white'>
 					<input
 						type='file'
 						ref={fileInputRef}
